@@ -1,11 +1,11 @@
-# Non-Intrusive Load Monitoring 
+# Machine Learning for Non-Intrusive Load Monitoring 
 ## HVAC_ORNL_UTK(HVORUT) dataset: 
 ### A dataset for studying NILM for HVAC units
 ![LD](/LD.png)
 
 This repository includes our collected dataset for HVAC component energy disaggregation as well as 
 the source code and demo for our paper in IEEE Transactions on Power Systems: [Non-Intrusive Energy Disaggregation Using Non-negative Matrix Factorization with Sum-to-k Constraint.](http://ieeexplore.ieee.org/abstract/document/7835299/)
-To the best of our knowledge this is the first collected dataset for studying NILM for Heating, Ventilation, and Air Conditioning (HVAC) systems. 
+To the best of our knowledge, this is the first collected dataset for studying NILM for Heating, Ventilation, and Air Conditioning (HVAC) systems. 
 
 Energy disaggregation or Non-Intrusive Load Monitoring (NILM) addresses the issue of extracting device-level energy consumption information by monitoring the aggregated signal at one single measurement point without installing meters on each individual device. Energy disaggregation can be formulated as a source separation problem where the aggregated signal is expressed as linear combination of basis vectors in a matrix factorization framework. In this work, we use machine learning in order to predict the pattern of energy consumption of each device during a day. 
 This project is one part of our collaboration with [DOE](https://www.osti.gov/biblio/1265590-non-intrusive-load-monitoring-hvac-components-using-signal-unmixing).
