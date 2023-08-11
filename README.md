@@ -1,6 +1,6 @@
-# Non-Intrusive Load Monitoring #
-## HVAC_ORNL_UTK(HVORUT) dataset: ##
-### A dataset for studying NILM for HVAC units###
+# Non-Intrusive Load Monitoring 
+## HVAC_ORNL_UTK(HVORUT) dataset: 
+### A dataset for studying NILM for HVAC units
 ![LD](/LD.png)
 
 This repository includes our collected dataset for HVAC component energy disaggregation as well as 
@@ -12,10 +12,10 @@ This project is one part of our collaboration with [DOE](https://www.osti.gov/bi
 
 
 
-###prerequisite:###
+prerequisite:
 MATLAB R2015a
 
-###Datasets###
+## Datasets
 (Temporay unavailable. Will be available soon after getting the required permissions. Sorry for the inconvenience!) 
 
 We design two different experiments for evaluating our proposed algorithm. The first experiment is disaggregation of the whole home energy to the energy consumption of all the appliances at a residential home. 
@@ -41,7 +41,7 @@ emergency) and building control circuit.
 2-Decomposition of the obtained HVAC power signal from the previous step and estimating the power consumption profile of its components including:
 two compressors, two condenser fan and one indoor blower. The above Figure illustrates this hierarchical architecture. We collected the data in two different buildings (i.e., FRP1 and FRP2). The following is a brief  explanation about each.  
 
-###FRP1 details###
+### FRP1 detail
 
 In this part of the dataset the Bldg_Power(1) is the total power consumption of the building including
 all the existing devices and plugs: 
@@ -54,7 +54,7 @@ HVAC_Power(2), HVAC_Power(3), HVAC_Power(4), HVAC_Power(5), HVAC_Power(6) and HV
 power signal of all the HVAC components (compressor, etc.). Sampling rate for this dataset is 2 samples
 per minute. 
 
-###FRP2 details###
+### FRP2 details
 
 In this data, W_BldgTot	is the total power signal (Watt) of the building including the power signals of 
 W_Transf, W_Lights_dwn, W_EmLights_dwn, W_Lights_up, W_EmLights_up, W_WallHeater, W_Plugs102, W_Plugs103, W_Plugs104, W_Plugs, W_Plugs106, W_Plugs202, W_Plugs203, W_Plugs204,	W_Plugs205,	W_Plugs206,	W_PlugsExt,	W_DuctSmokeDet,	W_ExhaustFan, W_Unitary and W_RTU_Total.
@@ -70,23 +70,23 @@ Please see the [data folder](/data/?at=master) and ([the HVORUT dataset details.
 collected data in different time spans during the year in FRP1 and FRP2. 
 Please kindly cite our [paper](http://ieeexplore.ieee.org/abstract/document/7835299/) if you find this paper and dataset useful. 
 
-###Demo###
+### Demo
 Run the [`Demo.m`](/Demo.m) to see the result of disaggregation algorithm on the AMPds dataset. 
 Please put the [`AMP_DATA.mat`](/AMP_DATA.mat) in the same folder when running the [`Demo.m`](/Demo.m).
 
 
-* If parameter `training=1`, code performs the signal decomposition only without prediction. 
+* If parameter `training=1`, the code performs the signal decomposition only without prediction. 
 
 * For prediction: `training=0`.
 
-* Please see the guide in the beginning of the demo code to see how you can apply different methods such as Non-negative Sparse coding and Elastic Net. 
+* Please see the guide at the beginning of the demo code to see how you can apply different methods such as Non-negative Sparse coding and Elastic Net. 
 
 
 
 ###Results###
 You should see the following results (and a lot more!) after running the demo. 
 
-* Ground truth and estimated appliances signals using the S2K-NMF method for one random testing day (1440 minutes).
+* Ground truth and estimated appliance signals using the S2K-NMF method for one random testing day (1440 minutes).
 
 ![f1](alldev2.png)
 
@@ -107,26 +107,28 @@ ___
 
 
 
-###Useful links###
+### Useful links
 
 * [My NMF and Load disaggregation presentation](http://web.eecs.utk.edu/~arahimpo/NMF.pdf)
 * [NILM Toolkit](http://nilmtk.github.io/)
 * [NILM 2016 workshop](http://nilmworkshop.org/2016/)
 
-###Citation:###
+## Citation:
 
 * [Non-Intrusive Energy Disaggregation Using Non-negative Matrix Factorization with Sum-to-k Constraint.](http://ieeexplore.ieee.org/abstract/document/7835299/)
 
 IEEE Transactions on Power Systems
-~~~~
+
+
+```bibtext
 @article{rahimpour2017non,
 title={Non-Intrusive Energy Disaggregation Using Non-negative Matrix Factorization with Sum-to-k Constraint},
 author={Rahimpour, Alireza and Qi, Hairong and Fugate, David and Kuruganti, Teja},
 journal={IEEE Transactions on Power Systems},
 year={2017},
 publisher={IEEE}
-} 
-~~~~
+}
+```
 
 * [Non-intrusive load monitoring of HVAC components using signal unmixing.](http://ieeexplore.ieee.org/abstract/document/7418350/)
 
@@ -142,6 +144,6 @@ organization={IEEE}
 }
 ~~~~
 
-###Contact###
+### Contact
 
 Please feel free to contact [Alireza Rahimpour](mailto:arahimpo@utk.edu) for more information about this project.
