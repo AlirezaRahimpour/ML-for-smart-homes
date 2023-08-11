@@ -9,7 +9,7 @@ To the best of our knowledge, this is the first collected dataset for studying N
 
 Energy disaggregation or Non-Intrusive Load Monitoring (NILM) addresses the issue of extracting device-level energy consumption information by monitoring the aggregated signal at one single measurement point without installing meters on each individual device. Energy disaggregation can be formulated as a source separation problem where the aggregated signal is expressed as linear combination of basis vectors in a matrix factorization framework. In this work, we use machine learning in order to predict the pattern of energy consumption of each device during the day. 
 
-### This project is one part of our collaboration with [US Department Of Energy (DOE)](https://www.osti.gov/biblio/1265590-non-intrusive-load-monitoring-hvac-components-using-signal-unmixing).
+This project is one part of our collaboration with [US Department Of Energy (DOE)](https://www.osti.gov/biblio/1265590-non-intrusive-load-monitoring-hvac-components-using-signal-unmixing).
 
 
 
