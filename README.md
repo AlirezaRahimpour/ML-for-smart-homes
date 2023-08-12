@@ -1,5 +1,5 @@
 # Machine Learning for Non-Intrusive Load Monitoring 
-### A new algorithm and dataset for studying NILM for HVAC units
+### A new algorithm and dataset for studying NILM in smart buildings
 ![LD](/LD.png)
 
 ### Paper: [Non-Intrusive Energy Disaggregation Using Non-negative Matrix Factorization with Sum-to-k Constraint.](http://ieeexplore.ieee.org/abstract/document/7835299/)
