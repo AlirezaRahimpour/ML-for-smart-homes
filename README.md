@@ -13,10 +13,10 @@ the source code and demo for our paper in IEEE Transactions on Power Systems: [N
 To the best of our knowledge, this is the first collected dataset for studying NILM for Heating, Ventilation, and Air Conditioning (HVAC) systems. 
 
 ## Datasets
-(Temporay unavailable. Will be available soon after getting the required permissions. Sorry for the inconvenience!) 
+ 
 
-We design two different experiments for evaluating our proposed algorithm. The first experiment is disaggregation of the whole home energy to the energy consumption of all the appliances at a residential home. 
-For this part we use the current signal in [AMPds](http://ampds.org/): A Public Dataset for Load Disaggregation and Eco-Feedback Research for the first experiment. This dataset has most required features for performing an accurate disaggregation task.
+We designed two different experiments to evaluate our proposed algorithm. The first experiment is the disaggregation of the whole home energy to the energy consumption of all the appliances at a residential home. 
+For this part, we use the current signal in [AMPds](http://ampds.org/): A Public Dataset for Load Disaggregation and Eco-Feedback Research for the first experiment. This dataset has most required features for performing an accurate disaggregation task.
 
 The second experiment is based on designing a hierarchical scheme for disaggregating the whole building energy signal to the HVAC components signals (i.e., two compressors, two condenser fan and one indoor blower) in an industrial building (as shown below).
 
@@ -29,11 +29,11 @@ Platform (FRP). FRP was constructed to enable research into building envelope ma
 
 Our experiment in this part consists of two major steps: 
 
-1-Disaggregation of the power signal of whole building to power signals of all the circuits and devices existing in the building.
+1-Disaggregation of the power signal of the whole building to power signals of all the circuits and devices existing in the building.
 
-There are 16 different devices (in FRP1), circuits and plugs in the building:
+There are 16 different devices (in FRP1), circuits, and plugs in the building:
 HVAC unit, 480/208 Transformer, lighting circuits: 1, 3, 5, 7, Plug circuits: 1, 3, 5, 7, cord reel circuit, lighting control box, exhaust fan, piping heat trace, exterior lighting (lighting and
-emergency) and building control circuit. 
+emergency) and building control circuits. 
 
 2-Decomposition of the obtained HVAC power signal from the previous step and estimating the power consumption profile of its components including:
 two compressors, two condenser fan and one indoor blower. The above Figure illustrates this hierarchical architecture. We collected the data in two different buildings (i.e., FRP1 and FRP2). The following is a brief  explanation about each.  
@@ -106,7 +106,7 @@ ___
 
 ### Useful links
 
-* [My NMF and Load disaggregation presentation](http://web.eecs.utk.edu/~arahimpo/NMF.pdf)
+* [The NMF and Load disaggregation presentation](http://web.eecs.utk.edu/~arahimpo/NMF.pdf)
 * [NILM Toolkit](http://nilmtk.github.io/)
 * [NILM 2016 workshop](http://nilmworkshop.org/2016/)
 
